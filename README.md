@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Version(dev)
+- Node.js : v20.11.0(LTS)
+- React : v18.2.0
+- 프레임워크 추가 시, 버전 기재
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Git commit convention
 
-## Available Scripts
+```
+TAG: message
+ex) feat: add navbar component
+```
 
-In the project directory, you can run:
+### TAG
+|Tag|Description|
+|------|---|
+|feat|새로운 기능 추가|
+|fix|버그 수정|
+|design|CSS 등 사용자 UI 디자인 변경|
+|style|코드 포맷 변경, 세미 콜론 누락, 코드 변경 없음|
+|refactor|프로덕션 코드 리팩토링|
+|comment|주석 추가, 변경|
+|docs|문서 수정|
+|chore|빌드, 패키지 관련 수정, 코드 변경 없음|
+|rename|파일명 수정, 이동, 코드 변경 없음|
+|remove|파일 삭제, 코드 변경 없음|
+	
+# Git branch
 
-### `npm start`
+- main: 직접적인 변경은 Pull Request를 통해서만 이루어집니다.
+- develop: 개발용 브랜치로, 기능이나 버그 수정이 이루어집니다.
+- feature: 새로운 기능을 개발할 때 사용됩니다. feature/기능-설명 형식으로 브랜치를 생성합니다.
+- bugfix: 버그를 수정할 때 사용됩니다. bugfix/버그-설명 형식으로 브랜치를 생성합니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 중요!
+코드 작업을 시작하기 전에 항상 develop 브랜치로부터 새로운 브랜치를 생성하고, 작업이 완료되면 Pull Request를 통해 변경 사항을 develop 브랜치에 merge 합니다.
