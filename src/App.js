@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from './SignIn';
+import SignUp from './SignUp';
 import './App.css';
 import Navbar from './Navbar';
 import Main from './Main';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
       </Routes>
       </BrowserRouter>
     </div>
