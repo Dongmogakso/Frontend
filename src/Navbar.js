@@ -69,13 +69,13 @@ export default function Navbar() {
                     />
                   </button>
                 ) : (
-                  <div>
-                    <button className="mx-4">
+                  <div className="flex flex-row">
+                    <a href="/signup" className="mx-4">
                       <div className="font-bold text-[#65A3FF] font-mono">SIGN UP</div>
-                    </button>
-                    <button className="mx-4">
+                    </a>
+                    <a href="/signin" className="mx-4">
                       <div className="font-bold text-[#65A3FF] font-mono">SIGN IN</div>
-                    </button>
+                    </a>
                   </div>
                 )}
               </div>
