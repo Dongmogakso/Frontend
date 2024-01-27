@@ -18,6 +18,8 @@ function App() {
         <Route path="/signup" element={<SignUp />}></Route>
       </Routes>
       </BrowserRouter>
+      <header className="App-header"></header>
+      <Navbar />
     </div>
   );
 }
