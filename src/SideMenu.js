@@ -23,7 +23,7 @@ export default function SideMenu() {
                 <div className="bg-red-300 w-1/3 h-screen pt-16 z-10">
 
                 </div>
-                <div className="w-14">
+                <div className="w-14 z-10">
                 <div className="bg-blue-300 w-14 h-36 z-10 rounded-tr-lg rounded-br-lg" onClick={closeSideMenu}></div>
                 </div>
             </div>

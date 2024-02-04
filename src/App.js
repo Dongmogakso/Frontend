@@ -5,6 +5,7 @@ import SignUp from './SignUp';
 import './App.css';
 import Navbar from './Navbar';
 import SideMenu from './SideMenu';
+import MapView from './MapView';
 import Main from './Main';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <Navbar />
       <SideMenu />
       <Routes>
-        <Route path="/" element={<Main />}></Route>
+        <Route path="/" element={<MapView />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
       </Routes>
