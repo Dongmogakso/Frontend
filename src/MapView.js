@@ -26,10 +26,28 @@ const MapView = () => {
   useEffect(() => {
     const container = document.getElementById("map");
     const options = {
-      center: new kakao.maps.LatLng(37.2841, 127.0454),
+      center: new kakao.maps.LatLng(37.2795, 127.0438),
       level: 3,
     };
     const map = new kakao.maps.Map(container, options);
+
+    const positions = [
+      {
+        title: '모각소',
+        latlng: new kakao.maps.LatLng(37.2795, 127.0438)
+      },
+      {
+        title: 'test',
+        latlng: new kakao.maps.LatLng(37.2785, 127.0428)
+      }
+    ];
+    for (var i = 0; i < positions.length; i++) {
+      const marker = new kakao.maps.Marker({
+        map: map,
+        position: positions[i].latlng,
+        title: positions[i].title,
+      });
+    }
   }, []);
 
   useEffect(() => {
