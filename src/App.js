@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from './Navbar';
 import SideMenu from './SideMenu';
 import Main from './Main';
+import WriteReview from './WriteReview';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Main />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/review/write" element={<WriteReview/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>
